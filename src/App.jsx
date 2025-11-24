@@ -1,5 +1,13 @@
+import NavBar from "./components/NavBar";
+
 const App = () => {
-  return <div className="bg-blue-500 text-white text-2xl p-4">App</div>;
+  return <div className="min-h-screen bg-white text-zinc-900 antialiased">
+    {/* NavBar */}
+    <NavBar />
+    <main>
+      {/* Sections */}
+    </main>
+  </div>;
 };
 
 export default App;
