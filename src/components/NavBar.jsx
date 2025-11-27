@@ -1,3 +1,4 @@
+import { HousePlusIcon } from "lucide-react"
 import { useEffect, useState } from "react"
 
 const navLinks = ["About", "Spaces", "Location", "Contact"]
@@ -33,8 +34,12 @@ const NavBar = () => {
       </div>
 
 {/* Logo */}
-<div className="text-2xl"></div>
+<div className="text-2xl cursor-pointer text-rose-600 font-extrabold tracking-absolute left-1/2 transform -translate-x-1/2 centered-row gap-2">
+<HousePlusIcon/> CeyNest <sup className="font-normal -ml-2">®</sup>
+</div>
 
+{/* Right buttons */}
+<div className="flex items-center space-x-4"></div>
     </header>
   )
 }
