@@ -1,4 +1,4 @@
-import { HousePlusIcon } from "lucide-react"
+import { HousePlusIcon, Menu, Search } from "lucide-react"
 import { useEffect, useState } from "react"
 
 const navLinks = ["About", "Spaces", "Location", "Contact"]
@@ -34,12 +34,23 @@ const NavBar = () => {
       </div>
 
 {/* Logo */}
-<div className="text-2xl cursor-pointer text-rose-600 font-extrabold tracking-absolute left-1/2 transform -translate-x-1/2 centered-row gap-2">
+<div className="text-2xl cursor-pointer text-rose-600 font-extrabold tracking absolute left-1/2 transform -translate-x-1/2 centered-row gap-2">
 <HousePlusIcon/> CeyNest <sup className="font-normal -ml-2">®</sup>
 </div>
 
 {/* Right buttons */}
-<div className="flex items-center space-x-4"></div>
+<div className="flex items-center space-x-4">
+
+<button className="hidden cursor-pointer sm:block bg-rose-500 text-zinc-100 px-4 py-2 rounded-full text-sm font-semibold hover:bg-zinc-900 transition-colors">
+  List Your Home
+</button>
+<button className="hidden cursor-pointer sm:block text-zinc-800 hover:bg-zinc-50 p-2 rounded-full bg-zinc-800/10 transition-colors">
+<Search size={20}/>
+</button>
+<button className="md:hidden text-zinc-800 hover:text-white transition-colors">
+  <Menu size={24}/>
+</button>
+</div>
     </header>
   )
 }
