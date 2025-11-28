@@ -1,4 +1,4 @@
-import { MapPin } from "lucide-react"
+import { MapPin, X } from "lucide-react"
 
 const HeroSection = () => {
   return (
@@ -31,8 +31,28 @@ const HeroSection = () => {
                         <input type="text" placeholder="Locations" className="flex-grow outline-none text-zinc-800 placeholder-zinc-500 text-base" />
                     </div>
                     {/* Number 0f Guests */}
+                    <div className="flex items-center space-x-2 border border-zinc-200 pr-4 w-full md:w-auto">
+                        <X size={20} className="text-zinc-500" />
+                        <select className="flex-grow outline-none text-zinc-800 bg-transparent text-base">
+                            <option>Guests</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
                     {/* House Type */}
+                    <div className="flex items-center space-x-2 pr-4 w-full md:w-auto">
+                        <X size={20} className="text-zinc-500" />
+                        <select className="flex-grow outline-none text-zinc-800 bg-transparent text-base">
+                            <option>House Type</option>
+                            <option>Apartment</option>
+                            <option>Villa</option>
+                        </select>
+                    </div>
                     {/* Search Btn */}
+                    <button className="bg-rose-600 cursor-pointer text-white px-8 py-3 rounded-full hover:bg-zinc-700 transition-colors w-full md:w-auto font-medium">
+                        Search Now
+                    </button>
                 </div>
             </div>
         </div>
